@@ -17,7 +17,7 @@ public class C05String {
 				blue 
 				""";
 		System.out.println(color);
-		//space로 만든 값들은 모두 trim 되어버린다.
+		//space로 만든 값들은 모두 collapse(trim) 되어버린다.
 		
 		color = """
 				red  \s

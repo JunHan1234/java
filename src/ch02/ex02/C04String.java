@@ -13,7 +13,7 @@ public class C04String {
 		System.out.printf("%c\n", s.charAt(1));
 		
 		int i = "apple".codePointAt(0); // codePointAt으로 0번째 문자열에 해당하는 unicode 값을 출력한다.
-		i = "a".hashCode(); // "a"의 unicode값을 출력한다.
+		i = "a".hashCode(); // "a"의 hashCode 즉, unicode값을 출력한다.
 		i = "b".hashCode();
 		i = "c".compareTo("a"); // 앞 unicode값 - 뒤 unicode값을 출력한다. "99 - 97 = 2"
 		i = "a".compareTo("b"); // 활용해서 음수값을 출력할 수도 있다.
@@ -33,8 +33,6 @@ public class C04String {
 		b = "".isEmpty(); // 문자열이 완벽히 공백인지 판단한다.
 		b = s.matches("[a-zA-Z]*"); // 변수 s의 문자열이 대소문자 알파벳인지 판단한다.
 		b = s.matches("[0-9]*"); // 변수 s의 문자열이 숫자 0~9로 이루어져있는지 판단한다.
-
 		System.out.println(b);
-		
 	}
 }
