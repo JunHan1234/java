@@ -8,16 +8,21 @@ public class Grade {
 		
 		String score = "";
 		String grade = "";
-		String plus = "+";
-		String minus = "-";
+		String plusMinus = "";
+		String finalGrade = "";
 		
 		System.out.print("점수: ");
 		score = sc.nextLine();
+		plusMinus = score.substring(0);
 		
-		
-		if(score.equals("9") grade = "A";
-		System.out.printf("%s", grade + plus);
-		
+		if(score.startsWith("9")) grade = "A";
+		else if(score.startsWith("8")) grade = "B";
+		else grade = "C";
+		if(plusMinus.matches("[8-9]*")) finalGrade = grade + "+";
+		else if(plusMinus.matches("[4-7]*")) finalGrade = grade;
+		else if(grade.equals("C")) finalGrade = "C";
+		else finalGrade = grade + "-";
+		System.out.println(finalGrade);
 	}
 }
 /*
