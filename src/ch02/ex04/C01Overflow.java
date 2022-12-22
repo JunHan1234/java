@@ -9,7 +9,8 @@ public class C01Overflow {
 		
 		int i2 = 300;
 		byte b2 = (byte)i2; // casting 연산자를 이용한 강제 타입변환이다.
-		System.out.println(b2); // overflow 현상을 확인할 수 있다. binary check!
+		System.out.println(b2);
+		// binary상에서 overflow 현상이 있었음을 확인할 수 있다. binary check!
 	}
 
 }
