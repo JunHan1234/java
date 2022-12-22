@@ -7,13 +7,14 @@ public class Sum {
 		Scanner sc = new Scanner(System.in);
 		int num1 = 0;
 		int num2 = 0;
+		int sum = 0;
 		
 		System.out.print("a: ");
 		num1 = sc.nextInt();
 		System.out.print("b: ");
 		num2 = sc.nextInt();
 		
-		int sum = num1 + num2;
+		sum = num1 + num2;
 		System.out.printf("%d + %d = %d", num1, num2, sum);
 		// System.out.printf("%d + %d = %d", num1, num2, num1 + num2);
 	}
