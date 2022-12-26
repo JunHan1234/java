@@ -11,6 +11,8 @@ public class C03String {
 		String sumStr = "" + sum; //int를 String으로 변환한다.
 		System.out.println(sumStr);
 		
+		int i = Integer.parseInt(sumStr);
+		
 		String s = a + b + ""; // 연산자 우선순위는 + 가 여러개 있는경우 왼쪽부터 계산한다.
 		System.out.println(s);
 		
