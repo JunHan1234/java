@@ -26,7 +26,7 @@ public class H02Calculator {
 			do {
 				isGood = false;
 				System.out.print("op: "); op = sc.nextLine();
-				isGood = op.matches("[+-/\\*]"); // regular expression
+				isGood = op.matches("[\\+\\-\\/\\*]"); // regular expression
 				if(!isGood) System.out.println("input one of them(+, -, *, /).");
 			} while(!isGood);
 			
@@ -47,7 +47,7 @@ public class H02Calculator {
 			
 			System.out.printf("%d %s %d = %d\n", a, op, b, result);
 			
-			System.out.println("continue(y/n)? ");
+			System.out.print("continue(y/n)? ");
 		} while(sc.nextLine().equalsIgnoreCase("y"));
 		
 		System.out.println("end.");
