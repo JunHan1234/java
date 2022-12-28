@@ -5,33 +5,40 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		String userName = "";
+		int age = 0;
+		LocalDate regDate = null;
+		
 		Scanner sc = new Scanner(System.in);
-		User user = new User();
+		String tmp = "";
 		boolean isGood = false;
-		String temp = "";
-		int tempAge = 0;
+		// 빈 줄은 성격이 다른 두 단락을 나눌 때 넣는다.
 		
 		do {
-			isGood = false;
-			System.out.print("이름: "); temp = sc.nextLine();
-			isGood = temp.matches("[a-zA-z]+");
-			if(!isGood) System.out.println("영어로 이름을 다시 입력해주세요.");
-			if(isGood) user.setUserName(temp);
+			System.out.print("이름: ");
+			userName = sc.nextLine();
+			isGood = userName.matches("[a-zA-z가-힣]+");
+			if(!isGood) System.out.println("이름을 다시 입력해주세요.");
 		} while(!isGood);
 		
 		do {
 			isGood = false;
-			System.out.print("나이: "); temp = sc.nextLine();
-			isGood = temp.matches("[0-9]+");
-			if(!isGood) System.out.println("숫자로 나이를 다시 입력해주세요.");
-			if(isGood) tempAge = Integer.parseInt(temp);
+			System.out.print("나이: ");
+			tmp = sc.nextLine();
+			isGood = tmp.matches("[0-9]+");
+			if(isGood) age = Integer.parseInt(tmp);
+			else System.out.println("숫자로 나이를 다시 입력해주세요.");
 		} while(!isGood);
 		
-		user.setAge(tempAge);
-		user.setJoinDate(LocalDate.now());
+		regDate = LocalDate.now();
 		
-		System.out.println();
-		System.out.printf("이름: %s\n나이: %d\n가입일: %s", user.getUserName(), user.getAge(), user.getJoinDate());
+		User user = new User();
+		user.setUserName(userName);
+		user.setAge(age);
+		user.setJoinDate(regDate);
+		
+		System.out.printf("\n이름: %s\n나이: %d\n가입일: %s",
+				user.getUserName(), user.getAge(), user.getJoinDate());
 	}
 }
 /*
