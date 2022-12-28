@@ -1,19 +1,19 @@
 package ch05.ex01.case03;
 
 public class User {
-	private String userName;
+	private String userName; // encapsulation -> userName 이라는 객체로 객체데이터를 캡슐화한다.
 	private int age;
-	// alt + shift + s -> Generate Getters and Setters 클릭 후 자동생성한다.
+	// alt + shift + s -> Generate Getters and Setters 클릭 후(혹은 r) 자동생성한다.
 	public String getUserName() { // getter
 		return userName;
 	}
 	
-	public void setUserName(String userName) { // setter
+	public void setUserName(/*User this*/String userName) { // setter
 		this.userName = userName;
 	}
 	
-	public int getAge() {
-		return age;
+	public int getAge(/*User this*/) { // public은 외부에서도 보이는 일종의 문(domain)이다.
+		return /*this. 생략*/age;
 	}
 	
 	public void setAge(int age) {
