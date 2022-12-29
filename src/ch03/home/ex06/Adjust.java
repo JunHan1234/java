@@ -12,7 +12,7 @@ public class Adjust {
 		x = sc.nextDouble();
 		
 		delFloor = x - x % 1;
-		System.out.printf("%f", delFloor);
+		System.out.printf("%.1f", delFloor);
 	}
 }
 /*

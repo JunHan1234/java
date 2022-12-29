@@ -18,7 +18,7 @@ public class H02Calculator {
 			do {
 				isGood = false;
 				System.out.print("a: "); tmp = sc.nextLine();
-				isGood = tmp.matches("[0-9]+");  // * -> 0글자 이상 + -> 1글자 이상
+				isGood = tmp.matches("[0-9]+");  // * -> 0글자 이상 // + -> 1글자 이상
 				if(isGood) a = Integer.parseInt(tmp);
 				else System.out.println(errMsg);
 			} while(!isGood);
