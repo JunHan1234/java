@@ -7,9 +7,9 @@ public class Man {
 	private int age;
 	private LocalDate birthday;
 
-	public void singing() {}
+	public void sing() {}
 	public void eat() {}
-	public void runAway() {}
+	public void run() {}
 
 	public void setManName(String manName) {
 		this.manName = manName;
