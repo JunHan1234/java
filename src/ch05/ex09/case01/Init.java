@@ -6,7 +6,7 @@ public class Init {
 	private static int s; // static variable
 	private int i; // instance variable
 	
-	static {
+	static { // 앱이 실행되면 단 한번만 실행된다.
 		Init.s = 1; // 초기화로 업무상 기본값 설정한다.
 		//this.i = 1; //문법상 사용 불가능하다.
 		Console.info("static{}");
