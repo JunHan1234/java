@@ -4,7 +4,55 @@ import java.util.Scanner;
 
 public class Console {
 	private static Scanner sc;
-	private static String tmp;
+	
+	static {
+		sc = new Scanner(System.in);
+	}
+	
+	private static void inMsg(String msg) {
+		System.out.print(msg + "\n> ");
+	}
+	
+	private static void err(String msg) {
+		System.out.println("ERROR] " + msg + "가 아닙니다.");
+	}
+	
+	public static String inStr(String msg) {
+		String input = "";
+		boolean isGood = false;
+		
+		do {
+			Console.inMsg(msg);
+			input = sc.nextLine();
+			isGood = input.matches("[a-zA-Z가-힣]+");
+			if(!isGood) Console.err("문자");
+		} while(!isGood);
+		
+		return input;
+	}
+	
+	public static int inNum(String msg) {
+		String input = "";
+		boolean isGood = false;
+		
+		do {
+			Console.inMsg(msg);
+			input = sc.nextLine();
+			isGood = input.matches("^[1-9][0-9]*");
+			if(!isGood) Console.err("자연수");
+		} while(!isGood);
+		
+		return Integer.parseInt(input);
+	}
+	
+	public static void info(String msg) {
+		System.out.println(msg);
+	}
+}
+	/*
+	private static Scanner sc;
+	private static String letterMsg;
+	private static String numMsg;
 	private static boolean isGood;
 	
 	static {
@@ -15,27 +63,32 @@ public class Console {
 		System.out.print(msg + "\n> ");
 	}
 	
+	private static void err(String msg) {
+		System.out.println("ERROR] " + msg + "가 아닙니다.");
+	}
+	
 	public static String inStr(String msg) {
 		do {
 			Console.inMsg(msg);
-			String letter = sc.nextLine();
-			isGood = letter.matches("[a-zA-Z가-힣]+");
-			if(!isGood) System.out.println("ERROR] 문자가 아닙니다.");
+			letterMsg = sc.nextLine();
+			isGood = letterMsg.matches("[a-zA-Z가-힣]+");
+			if(!isGood) Console.err("문자");
 		} while(!isGood);
-		return tmp;
+		return letterMsg;
 	}
 	
 	public static String inNum(String msg) {
 		do {
 			Console.inMsg(msg);
-			String num = sc.nextLine();
-			isGood = num.matches("[1-9]+");
-			if(!isGood) System.out.println("ERROR] 자연수가 아닙니다.");
+			numMsg = sc.nextLine();
+			isGood = numMsg.matches("^[1-9][0-9]*");
+			if(!isGood) Console.err("자연수");
 		} while(!isGood);
-		return tmp;
+		return numMsg;
 	}
 	
 	public static void info(String msg) {
 		System.out.println(msg);
 	}
 }
+	*/

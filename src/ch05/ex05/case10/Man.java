@@ -7,7 +7,7 @@ public class Man {
 	public void lie() {}
 	
 	public void sleep(Pajamas pajamas) {
-		this.strip(); // this = Man type 의 객체를 지칭한다.
+		this.strip(); // this = Man type 의 객체를 지칭한다. 생략가능.
 		this.wash();
 		this.wear(pajamas);
 		this.lie();
