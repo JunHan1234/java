@@ -5,6 +5,6 @@ public class Main {
 		Duck duck = new Duck();
 		Hen hen = new Hen();
 		
-		System.out.printf("%s\n%s", duck, hen.toString()); //.toString() 생략가능
+		System.out.printf("%s\n%s", duck, hen.toString()); //duck".toString()" 생략가능
 	}
 }
