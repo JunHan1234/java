@@ -1,6 +1,6 @@
 package ch06.ex04.case03;
 
-public class Circle extends Point {
+public class Circle extends Point { //Circle is a Point -> 어색하므로 나쁜코드다.
 	private int r;
 	
 	//과제: 위 compile error를 해결토록, 생성자를 기술하라.
