@@ -2,8 +2,8 @@ package ch06.home.ex01.case03;
 
 public class Main {
 	public static void main(String[] args) {
-		Apple apple = new Apple();
-		Grape grape = new Grape();
+		Apple apple = new Apple(); // Main has a Apple
+		Grape grape = new Grape(); // Main has a Grape
 	}
 }
 /*

@@ -11,6 +11,7 @@ public class Circle {
 	
 	@Override
 	public String toString() {
-		return String.format("%s, %d", this.point, this.r);
+		//return String.format("%s, %d", this.point, this.r);
+		return String.format("(%d, %d), %d", point.getX(), point.getY(), r);
 	}
 }
