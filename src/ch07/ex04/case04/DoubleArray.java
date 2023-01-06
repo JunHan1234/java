@@ -17,6 +17,7 @@ public class DoubleArray {
 			int sum = 0;
 			
 			System.out.print(" " + (i + 1) + " ");
+			
 			for(int j = 0; j < scores[0].length; j++) {
 				sum += scores[i][j];
 				System.out.printf("%5d", scores[i][j]);
