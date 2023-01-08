@@ -9,6 +9,6 @@ public class Main {
 			balls[i] = slot.chuck();
 		
 		for(Ball ball: balls)
-			System.out.print(ball.getNum() + " ");
+			System.out.print(ball.getBallNum() + " ");
 	}
 }

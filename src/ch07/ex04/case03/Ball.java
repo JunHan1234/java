@@ -3,11 +3,11 @@ package ch07.ex04.case03;
 public class Ball {
 	private int ballNum;
 	
-	public Ball(int num) {
-		this.ballNum = num;
+	public Ball(int ballNum) {
+		this.ballNum = ballNum;
 	}
 	
-	public int getNum() {
+	public int getBallNum() {
 		return this.ballNum;
 	}
 }

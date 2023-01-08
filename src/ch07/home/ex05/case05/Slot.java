@@ -3,8 +3,6 @@ package ch07.home.ex05.case05;
 import java.util.ArrayList;
 import java.util.List;
 
-import ch07.ex04.case03.Ball;
-
 public class Slot {
 	private List<Ball> balls;
 	
