@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 		C c = new C();
 		String msg = "";
-		if(c instanceof C) msg += "C ";
+		if(c instanceof C) msg += "C "; // (객체 instanceof class)
 		if(c instanceof B) msg += "B ";
 		if(c instanceof A) msg += "A ";
 		if(c instanceof Object) msg += "Object";

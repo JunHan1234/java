@@ -3,7 +3,7 @@ package ch07.ex04.case03;
 public class Slot {
 	private Ball[] balls;
 	
-	public Slot() {
+	public Slot() { //Slot has a 45 balls
 		balls = new Ball[45];
 		
 		for(int i = 0; i < balls.length; i++)

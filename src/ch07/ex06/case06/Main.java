@@ -22,5 +22,8 @@ public class Main {
 		pocket.printList(list4);
 		
 		System.out.println(pocket.add(list1));
+		System.out.println(pocket.add(list2));
+		System.out.println(pocket.add(list3));
+		//System.out.println(pocket.add(list4)); //scope이 Number 이하이므로 String type 불가능.
 	}
 }

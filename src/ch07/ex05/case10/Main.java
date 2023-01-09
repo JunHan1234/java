@@ -20,7 +20,5 @@ public class Main {
 			if(autobot instanceof Bumblebee bot) bot.guard();
 			if(autobot instanceof Prime bot) bot.command();
 		}
-		
-		
 	}
 }
