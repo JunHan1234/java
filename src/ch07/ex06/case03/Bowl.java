@@ -1,6 +1,6 @@
 package ch07.ex06.case03;
 
-public class Bowl<T> { //generic type
+public class Bowl<T> { //generic type(T)
 	private T val;
 	
 	public void setVal(T val) {

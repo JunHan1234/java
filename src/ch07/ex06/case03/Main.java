@@ -10,5 +10,7 @@ public class Main {
 		
 		int i = bowl1.getVal();
 		String s = bowl2.getVal();
+		
+		System.out.printf("%d %s", i, s);
 	}
 }

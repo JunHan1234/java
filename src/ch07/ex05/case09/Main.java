@@ -14,7 +14,7 @@ public class Main {
 		msg = "";
 		if(b instanceof C) msg += "C ";
 		if(b instanceof B) msg += "B ";
-		if(b instanceof A) msg += "A ";
+		if(b instanceof A) msg += "A "; // A는 interface이기 때문에 compile error 안뜸.
 		if(b instanceof Object) msg += "Object";
 		System.out.println(msg);
 		

@@ -13,8 +13,8 @@ public class MyMap {
 		System.out.println(map);
 		
 		User user = map.get(1); //map의 key를 이용해 조회.
-		System.out.println(user); //get은 조회를 할 뿐.
-		System.out.println(map); //map 안의 data는 그대로.
+		System.out.println(user); //get은 조회를 할 뿐,
+		System.out.println(map); //map 안의 data는 그대로이다.
 		
 		user = map.remove(1);
 		System.out.println(user); //remove는 삭제.

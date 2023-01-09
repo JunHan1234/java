@@ -14,7 +14,7 @@ public class Slot {
 	}
 	
 	public Ball chuck() {
-		int i = (int)(Math.random() * balls.size());
+		int i = (int)(Math.random() * balls.size()); //0 <= i < 45
 		return balls.remove(i); //삭제한 공을 return
 	}
 }

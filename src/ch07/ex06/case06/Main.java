@@ -20,5 +20,7 @@ public class Main {
 		pocket.printList(list2); //따라서 모든 type을 받아들일 수 있다.
 		pocket.printList(list3);
 		pocket.printList(list4);
+		
+		System.out.println(pocket.add(list1));
 	}
 }

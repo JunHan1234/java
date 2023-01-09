@@ -15,7 +15,7 @@ public class Main {
 		for(Autobot autobot: corps) {
 			autobot.run();
 			autobot.fight();
-			//autobot.guard();
+			//autobot.guard(); //Bumblebee 객체만 가능한 method.
 			
 			if(autobot instanceof Bumblebee bot) bot.guard();
 			if(autobot instanceof Prime bot) bot.command();
