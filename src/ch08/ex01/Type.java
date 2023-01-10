@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface Type { //annotation
+public @interface Type { //annotation에 쓸 속성명 name(), 속성값 value()을 설정했다.
 	String name();
 	int value();
 }

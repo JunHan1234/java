@@ -9,7 +9,7 @@ public class Main {
 		ordinal = Way.RIGHT.ordinal();
 		System.out.printf("%s %d\n", name, ordinal);
 		
-		Way[] ways = Way.values(); // 0, 1번째 요소들을 ways에 저장.
+		Way[] ways = Way.values(); // 0, 1번째 요소들을 배열 ways에 저장.
 		for(Way way: ways) System.out.print(way + " ");
 		System.out.println();
 		

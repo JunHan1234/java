@@ -27,6 +27,7 @@ public class C06Throws {
 		}
 	}
 	
+	//throws는 method 선언부에 사용한다.
 	public void third() throws Exception { //method 단계에서 throws 문법을 사용하면 call하는 method에 try를 쓰는것이 강제된다.
 		int i = 3 / 0;
 	}

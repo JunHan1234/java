@@ -18,7 +18,7 @@ public class C03Try {
 			System.out.println("IO error.");
 		} finally { //try 블럭이 온전히 실행되건 아니건 실행.
 			if(out != null) out.close(); //close()는 앞에있는 객체를 즉시 없애버린다. 여기선 try를 없앤(끈)다.
-		} //finally는 무조건 해야한다. PrintWriter 사용 후 close() 안하면 객체가 그대로 남아 사고위험이 있다.
+		} //finally는 꼭 실행된다. PrintWriter 사용 후 close() 안하면 비싼객체가 그대로 남아 메모리를 많이 잡아먹는다.
 		
 		System.out.println("end.");
 	}

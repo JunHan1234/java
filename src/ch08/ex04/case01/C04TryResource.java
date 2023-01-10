@@ -8,7 +8,7 @@ public class C04TryResource {
 	public static void main(String[] args) {
 		int[] arr = {1, 2, 3};
 		
-		try ( //try의 객체를 () 안에 기술하는 경우.
+		try ( //try의 객체를 () 안에 기술하는 경우. VM이 알아서 실행 후 ()블럭 안을 close해준다.
 			PrintWriter out1 = new PrintWriter(new FileWriter("c:/DEV/1.txt"));
 			PrintWriter out2 = new PrintWriter(new FileWriter("c:/DEV/2.txt"));
 		) {
@@ -21,7 +21,7 @@ public class C04TryResource {
 		} catch(IOException e) {
 			System.out.println("IO error.");
 		}
-			
+		
 		System.out.println("end.");
 	}
 }

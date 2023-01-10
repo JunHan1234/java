@@ -5,7 +5,7 @@ public class Main {
 		String userId = "gambit";
 		
 		try {
-			if(userId.length() > 3)
+			if(userId.length() > 3) //throw는 블럭 안에 사용한다.
 				throw new LengthException("문자 길이가 초과되었습니다.");
 		} catch(LengthException e) {
 			e.printStackTrace(); //console 통한 message 선언부

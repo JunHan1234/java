@@ -7,8 +7,8 @@ public enum Level {
 	private final Level next;
 	
 	private Level(int value, Level next) {//enum의 생성자는 private이다.
-		this.value = value;
-		this.next = next;
+		this.value = value;				  //내부에서 값을 생성하는 용도로 쓴다.
+		this.next = next;				  //값은 위의 브실골이다.
 	}
 	
 	public int value() {

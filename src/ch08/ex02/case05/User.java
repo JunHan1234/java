@@ -9,7 +9,7 @@ public class User {
 		this.level = level;
 	}
 	
-	public void upgradeLevel() {
+	public void upgradeLevel() { //service 단계에 기술한다.
 		Level nextLevel = level.next();
 		if(nextLevel != null) this.level = nextLevel;
 	}
