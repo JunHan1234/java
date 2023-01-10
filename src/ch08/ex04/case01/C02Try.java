@@ -11,5 +11,6 @@ public class C02Try {
 		}
 		
 		System.out.println("end.");
+		//exception error 이후 app이 종료되지 않고 마지막까지 잘 실행된 후 종료된다.
 	}
 }
