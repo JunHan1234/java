@@ -11,10 +11,11 @@ public class User {
 	
 	public void upgradeLevel() {
 		Level nextLevel = level.next();
-		if(nextLevel == null)
-			throw new IllegalStateException(
-					"이미 최고 등급 " + this.level + "입니다.");
-		this.level = nextLevel;
+		if(nextLevel != null) this.level = nextLevel;
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("%s %s", userName, level);
+	}
 }
