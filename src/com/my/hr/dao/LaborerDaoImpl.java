@@ -7,21 +7,23 @@ import java.util.List;
 import com.my.hr.domain.Laborer;
 
 public class LaborerDaoImpl implements LaborerDao {
-	private List<Laborer> laborers;
 	private Laborer laborer;
-	
-	public LaborerDaoImpl(List<Laborer> laborers) {
-		this.laborers = new ArrayList<>(laborers);
+	private List<Laborer> laborers = new ArrayList<>();
+
+	@Override
+	public Laborer selectLaborer() {
+		
+		return laborer;
 	}
 
 	@Override
-	public List<Laborer> selectLaborers() {
-		return this.laborers;
+	public List<Laborer> selectLaborerList() {
+		return laborers;
 	}
-
+	
 	@Override
 	public void insertLaborer(Laborer laborer) {
-		this.laborer = laborer;
+		this.laborers.add(laborer);
 	}
 
 	@Override
@@ -32,6 +34,7 @@ public class LaborerDaoImpl implements LaborerDao {
 
 	@Override
 	public void deleteLaborer() {
-		this.laborer = null;
+		this.laborer.setLaborerName(null);
+		this.laborer.setHiredDate(null);
 	}
 }

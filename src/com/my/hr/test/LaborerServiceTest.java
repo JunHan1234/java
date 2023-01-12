@@ -9,7 +9,7 @@ public class LaborerServiceTest {
 	public static void main(String[] args) {
 		LaborerServiceImpl laborerService = new LaborerServiceImpl();
 		
-		Laborer laborer1 = new Laborer(1, "hi", LocalDate.of(2002, 01, 01));
+		Laborer laborer1 = new Laborer(1, "hi", LocalDate.of(2002, 02, 11));
 		
 		System.out.println(laborer1);
 	}

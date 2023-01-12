@@ -10,14 +10,19 @@ public class LaborerServiceImpl implements LaborerService {
 	private LaborerDao laborerDao;
 	
 	public LaborerServiceImpl() {}
-	
+
 	public LaborerServiceImpl(LaborerDao laborerDao) {
 		this.laborerDao = laborerDao;
 	}
-
+	
 	@Override
-	public List<Laborer> getLaborers() {
-		return laborerDao.selectLaborers();
+	public List<Laborer> getLaborerList() {
+		return laborerDao.selectLaborerList();
+	}
+	
+	@Override
+	public Laborer getLaborer() {
+		return laborerDao.selectLaborer();
 	}
 
 	@Override

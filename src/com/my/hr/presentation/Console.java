@@ -9,9 +9,25 @@ public interface Console {
 	private static void inMsg(String msg) {
 		System.out.print(msg + ": ");
 	}
+	
+	public static int inMenuNum() {
+		String input = "";
+		boolean isGood = false;
+		
+		do {
+			Console.info("1.목록, 2.추가, 3.수정, 4.삭제, 0.종료");
+			input = sc.nextLine();
+			isGood = input.matches("[0-4]{1}");
+			if(!isGood) Console.err("0 ~ 4의 숫자만 입력하세요.");
+		} while(!isGood);
+		
+		int inMenuNum = Integer.parseInt(input);
+		return inMenuNum;
+	}
 
 	public static int inNumId() {
-		return (int)(Math.random() * 10000) + 1;
+		int i = 0;
+		return ++i;
 	}
 	
 	public static String inStr(String msg) {
@@ -92,8 +108,13 @@ public interface Console {
 	}
 	
 	public static void info(Object obj) {
-		if(obj == null) obj = "노동자가 없습니다.";
-		System.out.println(obj);
+		try {
+			if(obj == null) obj = "노동자가 없습니다.";
+		} catch(Exception e) {
+			
+		} finally {
+			System.out.println(obj);
+		}
 	}
 	
 	public static void err(String msg) {

@@ -39,7 +39,7 @@ public class Laborer {
 	
 	@Override
 	public String toString() {
-		return String.format("%d %10s %10s",
+		return String.format("%d \s\s%s \s\s%s",
 				this.laborerId, this.laborerName, this.hiredDate);
 	}
 }
